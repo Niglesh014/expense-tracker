@@ -1,0 +1,8 @@
+
+services:
+  expense-tracker:
+    build: .
+    container_name: expense-tracker-app
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
